@@ -224,31 +224,19 @@ Jaipur → Khatu Shyam Ji → Jeen Mata → Harsh Parvat → Lakshmi Mata → Sa
 </div>
 </section>
 
-<script>
-function sendToWhatsApp() {
+<section id="booking">
+<h2>Book Your Luxury Ride</h2>
+<form>
+<input type="text" placeholder="Your Name" required>
+<input type="tel" placeholder="Phone Number" required>
+<input type="text" placeholder="Pickup Location" required>
+<input type="text" placeholder="Destination" required>
+<input type="date" required>
+<textarea placeholder="Message"></textarea>
+<button type="submit">Submit Booking</button>
+</form>
+</section>
 
-var name = document.getElementById("name").value;
-var phone = document.getElementById("phone").value;
-var pickup = document.getElementById("pickup").value;
-var destination = document.getElementById("destination").value;
-var date = document.getElementById("date").value;
-var message = document.getElementById("message").value;
-
-var fullMessage = 
-"🚗 *New Booking - Muskan Tour and Travels* %0A%0A" +
-"👤 Name: " + name + "%0A" +
-"📞 Phone: " + phone + "%0A" +
-"📍 Pickup: " + pickup + "%0A" +
-"🏁 Destination: " + destination + "%0A" +
-"📅 Date: " + date + "%0A" +
-"📝 Message: " + message;
-
-var whatsappURL = "https://wa.me/917891586517?text=" + fullMessage;
-
-window.open(whatsappURL, "_blank");
-
-}
-</script>
 <footer>
 © 2026 Muskan Tour and Travels | Jaipur Rajasthan
 </footer>
