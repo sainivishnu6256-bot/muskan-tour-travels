@@ -232,8 +232,8 @@ Jaipur → Khatu Shyam Ji → Jeen Mata → Harsh Parvat → Lakshmi Mata → Sa
 © 2026 Muskan Tour and Travels | Jaipur Rajasthan
 </footer>
 
-<a href="https://wa.me/91XXXXXXXXXX" class="whatsapp">💬</a>
-<a href="tel:+91XXXXXXXXXX" class="call">📞</a>
+<a href="https://wa.me/917891586517" class="whatsapp">💬</a>
+<a href="tel:+917891586517" class="call">📞</a>
 
 </body>
 </html>
