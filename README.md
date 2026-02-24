@@ -224,19 +224,53 @@ Jaipur → Khatu Shyam Ji → Jeen Mata → Harsh Parvat → Lakshmi Mata → Sa
 </div>
 </section>
 
-<section id="booking">
-<h2>Book Your Luxury Ride</h2>
-<form>
-<input type="text" placeholder="Your Name" required>
-<input type="tel" placeholder="Phone Number" required>
-<input type="text" placeholder="Pickup Location" required>
-<input type="text" placeholder="Destination" required>
-<input type="date" required>
-<textarea placeholder="Message"></textarea>
-<button type="submit">Submit Booking</button>
-</form>
+<section id="booking" style="padding:40px; background:#f5f5f5;">
+  <h2 style="text-align:center;">Book Your Ride</h2>
+
+  <form onsubmit="sendToWhatsApp(); return false;" 
+        style="max-width:500px; margin:auto; display:flex; flex-direction:column; gap:15px;">
+
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="tel" id="phone" placeholder="Your Phone Number" required>
+    
+    <select id="car" required>
+      <option value="">Select Car</option>
+      <option>Kia Carens Clavis</option>
+      <option>Tufan Force</option>
+      <option>Two Ecco</option>
+      <option>Small Car</option>
+    </select>
+
+    <input type="text" id="pickup" placeholder="Pickup Location" required>
+    <input type="text" id="drop" placeholder="Drop Location" required>
+    
+    <button type="submit" 
+      style="background:#d4af37; color:white; padding:12px; border:none; font-size:16px; cursor:pointer;">
+      Book Now
+    </button>
+  </form>
 </section>
 
+<script>
+function sendToWhatsApp() {
+  var name = document.getElementById("name").value;
+  var phone = document.getElementById("phone").value;
+  var car = document.getElementById("car").value;
+  var pickup = document.getElementById("pickup").value;
+  var drop = document.getElementById("drop").value;
+
+  var message = "🚗 *New Booking Request - Muskan Tour & Travels* %0A%0A"
+    + "👤 Name: " + name + "%0A"
+    + "📞 Phone: " + phone + "%0A"
+    + "🚘 Car: " + car + "%0A"
+    + "📍 Pickup: " + pickup + "%0A"
+    + "🏁 Drop: " + drop;
+
+  var whatsappURL = "https://wa.me/917891586517?text=" + message;
+
+  window.open(whatsappURL, "_blank");
+}
+</script>
 <footer>
 © 2026 Muskan Tour and Travels | Jaipur Rajasthan
 </footer>
