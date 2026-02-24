@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Muskan Tour and Travels</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
 <style>
 *{
@@ -13,42 +13,31 @@ margin:0;
 padding:0;
 box-sizing:border-box;
 font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
 }
 
 body{
-background:#0f0f0f;
-color:white;
+background:#f4f9ff;
 }
 
 header{
-background:linear-gradient(135deg,#111,#222);
-padding:25px;
+background:linear-gradient(135deg,#0077b6,#00b4d8);
+color:white;
+padding:20px;
 text-align:center;
-border-bottom:2px solid gold;
-}
-
-header h1{
-font-family:'Playfair Display',serif;
-font-size:32px;
-color:gold;
 }
 
 nav{
-text-align:center;
+background:#023e8a;
 padding:15px;
-background:#111;
+text-align:center;
 }
 
 nav a{
 color:white;
-margin:0 20px;
+margin:0 15px;
 text-decoration:none;
 font-weight:500;
-transition:0.3s;
-}
-
-nav a:hover{
-color:gold;
 }
 
 .hero{
@@ -58,15 +47,13 @@ display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
+color:white;
 text-align:center;
-background-blend-mode:overlay;
-background-color:rgba(0,0,0,0.6);
+padding:20px;
 }
 
 .hero h2{
-font-size:45px;
-font-family:'Playfair Display',serif;
-color:gold;
+font-size:40px;
 }
 
 .hero p{
@@ -75,84 +62,77 @@ font-size:18px;
 }
 
 .btn{
-background:gold;
-color:black;
-padding:12px 30px;
+background:orange;
+padding:12px 25px;
+color:white;
 border-radius:30px;
 text-decoration:none;
 font-weight:bold;
-transition:0.3s;
-}
-
-.btn:hover{
-background:white;
 }
 
 section{
-padding:80px 10%;
+padding:70px 10%;
 }
 
 h2{
 text-align:center;
-margin-bottom:50px;
-color:gold;
-font-family:'Playfair Display',serif;
+margin-bottom:40px;
+color:#023e8a;
 }
 
 .cards{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:30px;
+gap:25px;
 }
 
 .card{
-background:rgba(255,255,255,0.05);
-padding:30px;
+background:white;
+padding:25px;
 border-radius:15px;
-backdrop-filter:blur(10px);
-border:1px solid rgba(255,215,0,0.3);
-transition:0.4s;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+transition:0.3s;
 }
 
 .card:hover{
 transform:translateY(-10px);
-border:1px solid gold;
 }
 
 .route{
-background:linear-gradient(135deg,#111,#1a1a1a);
+background:#0077b6;
+color:white;
 padding:40px;
-border-radius:20px;
+border-radius:15px;
 text-align:center;
-border:1px solid gold;
+font-weight:500;
 }
 
 form input, form textarea{
 width:100%;
 padding:12px;
 margin:10px 0;
-border-radius:10px;
-border:none;
+border-radius:8px;
+border:1px solid #ccc;
 }
 
 form button{
-background:gold;
-color:black;
+background:#0077b6;
+color:white;
 padding:12px;
 border:none;
-border-radius:10px;
+border-radius:8px;
 cursor:pointer;
-font-weight:bold;
 }
 
 footer{
-background:#111;
+background:#023e8a;
+color:white;
 text-align:center;
-padding:25px;
-border-top:1px solid gold;
+padding:20px;
 margin-top:40px;
 }
 
+/* WhatsApp Button */
 .whatsapp{
 position:fixed;
 bottom:20px;
@@ -165,12 +145,13 @@ font-size:22px;
 text-decoration:none;
 }
 
+/* Call Button */
 .call{
 position:fixed;
 bottom:90px;
 right:20px;
-background:gold;
-color:black;
+background:#0077b6;
+color:white;
 padding:15px;
 border-radius:50%;
 font-size:20px;
@@ -190,30 +171,40 @@ text-decoration:none;
 <a href="#about">About</a>
 <a href="#vehicles">Vehicles</a>
 <a href="#tours">Tours</a>
-<a href="#route">Route</a>
+<a href="#route">Daily Route</a>
 <a href="#booking">Booking</a>
 </nav>
 
 <div class="hero">
-<h2>Luxury Rajasthan & All India Tours</h2>
-<p>Travel with Comfort, Safety & Experience</p>
+<h2>Explore Rajasthan & All India With Comfort</h2>
+<p>Reliable Taxi & Tour Services from Jaipur</p>
 <a href="#booking" class="btn">Book Now</a>
 </div>
 
 <section id="about">
 <h2>About Us</h2>
 <p style="text-align:center;">
-Serving since 2010, Muskan Tour and Travels provides premium travel services from Jaipur across Rajasthan and India.
+Muskan Tour and Travels has been serving since 2010.  
+We provide Rajasthan tours, All India travel services, Jaipur sightseeing and outstation taxi services with professional drivers.
 </p>
 </section>
 
 <section id="vehicles">
-<h2>Our Premium Fleet</h2>
+<h2>Our Vehicles</h2>
 <div class="cards">
-<div class="card"><h3>Kia Carens Clavis</h3><p>Luxury Family Travel</p></div>
-<div class="card"><h3>Force Tufan</h3><p>Group Tours</p></div>
-<div class="card"><h3>Maruti Eeco (2)</h3><p>Budget Travel</p></div>
-<div class="card"><h3>Small Cars</h3><p>Economy Trips</p></div>
+<div class="card"><h3>Kia Carens Clavis</h3><p>Comfort family travel</p></div>
+<div class="card"><h3>Force Tufan</h3><p>Group & Tour Trips</p></div>
+<div class="card"><h3>Maruti Eeco (2)</h3><p>Budget Friendly</p></div>
+<div class="card"><h3>Small Cars</h3><p>Economy Travel</p></div>
+</div>
+</section>
+
+<section id="tours">
+<h2>Tour Packages</h2>
+<div class="cards">
+<div class="card"><h3>Rajasthan Tour</h3><p>Jaipur, Udaipur, Jodhpur, Jaisalmer</p></div>
+<div class="card"><h3>All India Tour</h3><p>Delhi, Agra, Mumbai, Goa & More</p></div>
+<div class="card"><h3>Jaipur Sightseeing</h3><p>Full Day Local Tour</p></div>
 </div>
 </section>
 
@@ -225,7 +216,7 @@ Jaipur → Khatu Shyam Ji → Jeen Mata → Harsh Parvat → Lakshmi Mata → Sa
 </section>
 
 <section id="booking">
-<h2>Book Your Luxury Ride</h2>
+<h2>Book Your Trip</h2>
 <form>
 <input type="text" placeholder="Your Name" required>
 <input type="tel" placeholder="Phone Number" required>
