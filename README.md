@@ -224,74 +224,29 @@ Jaipur → Khatu Shyam Ji → Jeen Mata → Harsh Parvat → Lakshmi Mata → Sa
 </div>
 </section>
 
-<section id="booking">
-<h2>Book Your Ride</h2>
-
-<form onsubmit="sendToWhatsApp(); return false;" 
-      style="max-width:500px; margin:auto; display:flex; flex-direction:column; gap:15px;">
-
-<input type="text" id="name" placeholder="Your Name" required>
-<input type="tel" id="phone" placeholder="Your Phone Number" required>
-
-<select id="car" required style="padding:12px; border-radius:10px;">
-<option value="">Select Car</option>
-<option>Kia Carens Clavis</option>
-<option>Force Tufan</option>
-<option>Maruti Eeco</option>
-<option>Small Car</option>
-</select>
-
-<input type="text" id="pickup" placeholder="Pickup Location" required>
-<input type="text" id="drop" placeholder="Drop Location" required>
-
-<button type="submit">Book Now</button>
-
-</form>
-</section>
-  <h2 style="text-align:center;">Book Your Ride</h2>
-
-  <form onsubmit="sendToWhatsApp(); return false;" 
-        style="max-width:500px; margin:auto; display:flex; flex-direction:column; gap:15px;">
-
-    <input type="text" id="name" placeholder="Your Name" required>
-    <input type="tel" id="phone" placeholder="Your Phone Number" required>
-    
-    <select id="car" required>
-      <option value="">Select Car</option>
-      <option>Kia Carens Clavis</option>
-      <option>Tufan Force</option>
-      <option>Two Ecco</option>
-      <option>Small Car</option>
-    </select>
-
-    <input type="text" id="pickup" placeholder="Pickup Location" required>
-    <input type="text" id="drop" placeholder="Drop Location" required>
-    
-    <button type="submit" 
-      style="background:#d4af37; color:white; padding:12px; border:none; font-size:16px; cursor:pointer;">
-      Book Now
-    </button>
-  </form>
-</section>
-
 <script>
 function sendToWhatsApp() {
-  var name = document.getElementById("name").value;
-  var phone = document.getElementById("phone").value;
-  var car = document.getElementById("car").value;
-  var pickup = document.getElementById("pickup").value;
-  var drop = document.getElementById("drop").value;
 
-  var message = "🚗 *New Booking Request - Muskan Tour & Travels* %0A%0A"
-    + "👤 Name: " + name + "%0A"
-    + "📞 Phone: " + phone + "%0A"
-    + "🚘 Car: " + car + "%0A"
-    + "📍 Pickup: " + pickup + "%0A"
-    + "🏁 Drop: " + drop;
+var name = document.getElementById("name").value;
+var phone = document.getElementById("phone").value;
+var pickup = document.getElementById("pickup").value;
+var destination = document.getElementById("destination").value;
+var date = document.getElementById("date").value;
+var message = document.getElementById("message").value;
 
-  var whatsappURL = "https://wa.me/917891586517?text=" + message;
+var fullMessage = 
+"🚗 *New Booking - Muskan Tour and Travels* %0A%0A" +
+"👤 Name: " + name + "%0A" +
+"📞 Phone: " + phone + "%0A" +
+"📍 Pickup: " + pickup + "%0A" +
+"🏁 Destination: " + destination + "%0A" +
+"📅 Date: " + date + "%0A" +
+"📝 Message: " + message;
 
-  window.open(whatsappURL, "_blank");
+var whatsappURL = "https://wa.me/917891586517?text=" + fullMessage;
+
+window.open(whatsappURL, "_blank");
+
 }
 </script>
 <footer>
