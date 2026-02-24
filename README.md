@@ -224,7 +224,30 @@ Jaipur → Khatu Shyam Ji → Jeen Mata → Harsh Parvat → Lakshmi Mata → Sa
 </div>
 </section>
 
-<section id="booking" style="padding:40px; background:#f5f5f5;">
+<section id="booking">
+<h2>Book Your Ride</h2>
+
+<form onsubmit="sendToWhatsApp(); return false;" 
+      style="max-width:500px; margin:auto; display:flex; flex-direction:column; gap:15px;">
+
+<input type="text" id="name" placeholder="Your Name" required>
+<input type="tel" id="phone" placeholder="Your Phone Number" required>
+
+<select id="car" required style="padding:12px; border-radius:10px;">
+<option value="">Select Car</option>
+<option>Kia Carens Clavis</option>
+<option>Force Tufan</option>
+<option>Maruti Eeco</option>
+<option>Small Car</option>
+</select>
+
+<input type="text" id="pickup" placeholder="Pickup Location" required>
+<input type="text" id="drop" placeholder="Drop Location" required>
+
+<button type="submit">Book Now</button>
+
+</form>
+</section>
   <h2 style="text-align:center;">Book Your Ride</h2>
 
   <form onsubmit="sendToWhatsApp(); return false;" 
